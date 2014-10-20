@@ -75,9 +75,40 @@
 }
 
 .headerMenuItem:hover {
-	background: lightgray;
+	background: #8FC258;
 	color: black;
 }
 
+
+
+
+/*
+
+	Home page
+
+*/
+
+.homePageMainContainer {
+	width: 100%;
+	background: url("/Resources/Images/Photos/WeightsMain.jpg") no-repeat center;
+	height: 410px;
+	text-align: center;
+}
+
+.homePageMainPanelContent {
+	font-size: 1.2em;
+	width: 250px;
+
+}
+
+.homePageMainContentPanelSignupButton {
+	text-align: center;
+	border: 1px solid #000;
+	background: #FFDC39;
+	color: black;
+	padding: 5px;
+	border-radius: 4px;
+	width: 250px;
+}
 
 
