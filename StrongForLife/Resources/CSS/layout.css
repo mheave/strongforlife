@@ -3,37 +3,81 @@
 	padding: 0;
 	margin: 0;
 	font-family: "Helvetica";
+	background: black;
 }
 
-.header {
+.wrapper {
 	width:100%;
 	overflow: hidden;
-	background: black;
 	text-align: center;
 	vertical-align: central;
 }
 
-.headerContainer {
-	width: 1000px;
+
+.headerTop {
+	padding-top: 2px;
+	width: 100%;
+	height: 35px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 2px;
+	background: black;
 }
 
 .headerPhone {
 	color: white;
 	width: 200px;
 	display: inline-block;
-	float: left;
 	padding-top: 5px;
 	font-size: 1.2em;
+	float:left;
+	margin-left: 450px;
 }
 
 .headerSocialMedia {
+	display: inline-block;
 	float: right;
+	margin-right: 550px;
 }
 
 .headerSocialMediaIcon {
 	display: inline-block;
 }
+
+.headerBottom {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.2);
+	height: 75px
+}
+
+.headerLogo {
+	background-image: url("/Resources/Images/logo_small.png");
+	height: 75px;
+	width: 220px;
+	float: left;
+	display: inline-block;
+	margin-left: 450px;
+}
+
+.headerMenu {
+	float: right;
+	margin-top: 25px;
+	display: inline-block;
+	
+}
+
+.headerMenuItem {
+	color: white;
+	display: inline-block;
+	padding: 12px 20px;
+	text-align: center;
+	height: 25px;
+	vertical-align: central;
+}
+
+.headerMenuItem:hover {
+	background: lightgray;
+	color: black;
+}
+
+
 

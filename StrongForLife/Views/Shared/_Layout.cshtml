@@ -6,16 +6,29 @@
 	<link href="\Resources\CSS\layout.css" rel="stylesheet" type="text/css"/>
 </head>
 	<body>
-		<div class="header">
-			<div class="headerContainer">
-				<div class="headerPhone">Call 444-444-444</div>
+		<div class="wrapper">
+			<div class="headerTop">
+				<div class="headerPhone">Call us on 444-444-444</div>
 				<div class="headerSocialMedia">
 					<span class="headerSocialMediaIcon"><img src="~/Resources/Images/layout/facebook-icon.png" /></span>
 					<span class="headerSocialMediaIcon"><img src="~/Resources/Images/layout/twitter-icon.png" /></span>
 					<span class="headerSocialMediaIcon"><img src="~/Resources/Images/layout/youtube-icon.png" /></span>
 				</div>
 			</div>
+				
+			<div class="headerBottom">
+				<div class="headerLogo"></div>
+				<div class="headerMenu">
+					<div class="headerMenuItem">Home</div>
+					<div class="headerMenuItem">About</div>
+					<div class="headerMenuItem">Services</div>
+					<div class="headerMenuItem">Testimonials</div>
+					<div class="headerMenuItem">Contact</div>
+					<div class="headerMenuItem">Blog</div>
+				</div>
+			</div>
 		</div>
+
 		@RenderBody()
 	</body>
 </html>
