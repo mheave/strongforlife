@@ -2,6 +2,7 @@
     overflow-x: hidden;
 	padding: 0;
 	margin: 0;
+	font-family: "Helvetica";
 }
 
 .header {
@@ -13,7 +14,7 @@
 }
 
 .headerContainer {
-	width: 800px;
+	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -26,7 +27,6 @@
 }
 
 .headerSocialMedia {
-	width: 600px;	
 	float: right;
 }
 
