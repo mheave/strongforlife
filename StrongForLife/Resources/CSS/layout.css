@@ -127,3 +127,9 @@
 	text-align: center;
 	
 }
+
+.homePageSmallStrap ul li {
+	display: block;
+	float: left;
+	list-style: square;
+}
