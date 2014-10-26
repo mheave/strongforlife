@@ -20,5 +20,9 @@ namespace StrongForLife.Controllers
 			return View();
 		}
 
+		public ActionResult Services() {
+			return View();
+		}
+
     }
 }

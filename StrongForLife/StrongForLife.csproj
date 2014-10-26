@@ -507,6 +507,16 @@
     <Content Include="Resources\JS\scroll.js" />
     <Content Include="Resources\JS\setup.js" />
     <Content Include="Resources\JS\tabs.js" />
+    <Content Include="Resources\layerslider\css\layerslider.css" />
+    <Content Include="Resources\layerslider\js\layerslider.kreaturamedia.jquery-min.js" />
+    <Content Include="Resources\layerslider\js\layerslider.kreaturamedia.jquery.js" />
+    <Content Include="Resources\layerslider\skins\darkskin\skin.css" />
+    <Content Include="Resources\layerslider\skins\darkskin\skin.png" />
+    <Content Include="Resources\layerslider\skins\defaultskin\skin.css" />
+    <Content Include="Resources\layerslider\skins\defaultskin\skin.png" />
+    <Content Include="Resources\layerslider\skins\lightskin\skin.css" />
+    <Content Include="Resources\layerslider\skins\lightskin\skin.png" />
+    <Content Include="Resources\layerslider\skins\noskin\skin.css" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -535,6 +545,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\AboutUs.cshtml" />
+    <Content Include="Views\Home\Services.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
