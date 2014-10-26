@@ -67,12 +67,12 @@
 	#menu ul li:hover ul, #menu ul li li:hover ul, #menu ul li li li:hover ul, #menu ul li li li li:hover ul { display:block; }
 	
 #menu .icon_drop {
-	background-image:url(../images/navicon_down.png);
+	background-image:url(/Resources/Images/Template/images/navicon_down.png);
 	background-position: right;
 	background-repeat:no-repeat;
 }
 #menu .icon_sub {
-	background-image:url(../images/navicon.png);
+	background-image:url(/Resources/Images/Template/images/navicon.png);
 	background-position: right;
 	background-repeat:no-repeat;
 }
