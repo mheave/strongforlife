@@ -24,6 +24,5 @@ namespace StrongForLife.Controllers
 			
 			return View("Success");
 		}
-
     }
 }
