@@ -1,5 +1,16 @@
-﻿@{
-    ViewBag.Title = "Index";
-}
+﻿@model StrongForLife.ViewModels.EnquiryViewModel
 
-<h2>Index</h2>
+<div class="box">
+	<div class="clearsmall"></div>
+	<h2>Get in touch</h2>	
+	
+	@using (Html.BeginForm()){
+	<p>	Name :	@Html.TextBoxFor(m=>m.Name)<br/>
+		Email:	@Html.TextBoxFor(m=>m.Email)<br/>
+		Tel:	@Html.TextBoxFor(m=>m.TelNo)
+	</p>
+	<input type="submit" value="contact us"/>
+	}
+	
+</div>
+

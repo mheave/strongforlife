@@ -133,6 +133,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\EnquiryViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
@@ -155,9 +156,11 @@
     <Content Include="Resources\Images\layout\youtube-icon.png" />
     <Content Include="Resources\Images\logo.png" />
     <Content Include="Resources\Images\logo_header.png" />
+    <Content Include="Resources\Images\logo_small.jpg" />
     <Content Include="Resources\Images\logo_small.png" />
     <Content Include="Resources\Images\Photos\ColouredKettlebells.jpg" />
     <Content Include="Resources\Images\Photos\ColouredKettlebellsMain.jpg" />
+    <Content Include="Resources\Images\Photos\HomePage_Kettlebells.jpg" />
     <Content Include="Resources\Images\Photos\WeightsMain.jpg" />
     <Content Include="Resources\Images\Template\images\ajax-loader.gif" />
     <Content Include="Resources\Images\Template\images\avatar.jpg" />
@@ -550,6 +553,7 @@
     <Content Include="Views\Home\Services.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Amazing12\Index.cshtml" />
+    <Content Include="Views\Contact\Success.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
