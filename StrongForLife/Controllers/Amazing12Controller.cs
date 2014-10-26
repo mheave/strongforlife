@@ -16,5 +16,9 @@ namespace StrongForLife.Controllers
             return View();
         }
 
+		public ActionResult Beta() {
+			return View();
+		}
+
     }
 }

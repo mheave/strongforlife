@@ -554,6 +554,7 @@
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Amazing12\Index.cshtml" />
     <Content Include="Views\Contact\Success.cshtml" />
+    <Content Include="Views\Amazing12\Beta.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
