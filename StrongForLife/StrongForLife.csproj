@@ -155,6 +155,7 @@
     <Content Include="Resources\Images\layout\twitter-icon.png" />
     <Content Include="Resources\Images\layout\youtube-icon.png" />
     <Content Include="Resources\Images\logo.png" />
+    <Content Include="Resources\Images\logos\a12.jpg" />
     <Content Include="Resources\Images\logos\blackBGSFL.png" />
     <Content Include="Resources\Images\logos\sfl-2.png" />
     <Content Include="Resources\Images\logos\sfl1.png" />
