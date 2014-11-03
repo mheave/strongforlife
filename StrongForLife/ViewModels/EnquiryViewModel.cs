@@ -11,6 +11,6 @@ namespace StrongForLife.ViewModels {
 		[Required(ErrorMessage = "Please enter a valid email address")]
 		public string Email { get; set; }
 		[Required(ErrorMessage = "Please enter a valid phone number")]
-		public int TelNo { get; set; }
+		public string TelNo { get; set; }
 	}
 }

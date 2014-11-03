@@ -1,16 +1,29 @@
 ﻿@model StrongForLife.ViewModels.EnquiryViewModel
 
+<link rel="stylesheet" href="~/Resources/CSS/contact.css"/>
+
 <div class="box">
 	<div class="clearsmall"></div>
 	<h2>Get in touch</h2>	
-	
-	@using (Html.BeginForm()){
-	<p>	Name :	@Html.TextBoxFor(m=>m.Name)<br/>
-		Email:	@Html.TextBoxFor(m=>m.Email)<br/>
-		Tel:	@Html.TextBoxFor(m=>m.TelNo)
-	</p>
-	<input type="submit" value="contact us"/>
-	}
-	
+	<div style="height: 300px;">
+		@using (Html.BeginForm(null,null,FormMethod.Post,new {
+		id = "contactus"
+		})) {
+		<fieldset>
+			Name :	@Html.TextBoxFor(m => m.Name,new {
+	 maxlength = 50
+	 })<br />
+			Email:	@Html.TextBoxFor(m => m.Email,new {
+	 maxlength = 50
+	 })<br />
+			Tel:	@Html.TextBoxFor(m => m.TelNo,new {
+   maxlength = 50
+   })
+			<input type="submit" value="contact us" />
+		</fieldset>
+		}
+	</div>
+	<div class="clear"></div>
 </div>
+
 
