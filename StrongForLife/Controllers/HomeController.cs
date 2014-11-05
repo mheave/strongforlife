@@ -24,5 +24,9 @@ namespace StrongForLife.Controllers
 			return View();
 		}
 
+		public ActionResult Timetable() {
+			return View();
+		}
+
     }
 }
