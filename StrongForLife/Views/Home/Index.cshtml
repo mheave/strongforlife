@@ -78,7 +78,7 @@
 		<div id="newsletter_right">
 			@using (Html.BeginForm("NewsletterSignup","Contact",FormMethod.Post,new {id = "contactus"})) 
 			{
-				<p><span class="bold color">Email : </span><input type="text" name="email" /> &nbsp;<input type="submit" class="button highlight small" value="join us"></p>
+				<p><span class="bold color">Email : </span><input type="text" name="email" id="email" /> &nbsp;<input type="submit" class="button highlight small" value="join us"></p>
 			}
 		</div>
 		<!-- End Newsletter Right -->

@@ -65,7 +65,7 @@ namespace StrongForLife.Controllers
 			// You can also use the **DeliverAsync** method, which returns an awaitable task.
 			transportWeb.Deliver(emailMessage);	
 		
-			return View("NewsletterSuccess");
+			View("NewsletterSuccess");
 		}
     }
 }
