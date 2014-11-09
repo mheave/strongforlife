@@ -177,6 +177,10 @@
     <Content Include="Resources\Images\Photos\HomePage_Kettlebells.jpg" />
     <Content Include="Resources\Images\Photos\HomePage_plates.jpg" />
     <Content Include="Resources\Images\Photos\Hompage_classSquat.jpg" />
+    <Content Include="Resources\Images\Photos\transformations\Eve.jpg" />
+    <Content Include="Resources\Images\Photos\transformations\michellemahony.jpg" />
+    <Content Include="Resources\Images\Photos\transformations\stevenwally.jpg" />
+    <Content Include="Resources\Images\Photos\transformations\thomasmcguinness.jpg" />
     <Content Include="Resources\Images\Photos\WeightsMain.jpg" />
     <Content Include="Resources\Images\Template\images\ajax-loader.gif" />
     <Content Include="Resources\Images\Template\images\avatar.jpg" />
