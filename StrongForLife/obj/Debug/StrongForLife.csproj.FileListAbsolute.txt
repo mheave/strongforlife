@@ -38,6 +38,8 @@ C:\FileStore\Personal\StrongForLife\StrongForLife\bin\EntityFramework.dll
 C:\FileStore\Personal\StrongForLife\StrongForLife\bin\Microsoft.Web.Infrastructure.dll
 C:\FileStore\Personal\StrongForLife\StrongForLife\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
 C:\FileStore\Personal\StrongForLife\StrongForLife\bin\Newtonsoft.Json.dll
+C:\FileStore\Personal\StrongForLife\StrongForLife\bin\SendGrid.SmtpApi.dll
+C:\FileStore\Personal\StrongForLife\StrongForLife\bin\SendGridMail.dll
 C:\FileStore\Personal\StrongForLife\StrongForLife\bin\System.Net.Http.Formatting.dll
 C:\FileStore\Personal\StrongForLife\StrongForLife\bin\System.Web.Http.dll
 C:\FileStore\Personal\StrongForLife\StrongForLife\bin\System.Web.Http.WebHost.dll
