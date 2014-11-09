@@ -61,11 +61,11 @@ namespace StrongForLife.Controllers
 			// Create an Web transport for sending email.
 			var transportWeb = new Web(credentials);
 
-			// Send the email.
-			// You can also use the **DeliverAsync** method, which returns an awaitable task.
+			//// Send the email.
+			//// You can also use the **DeliverAsync** method, which returns an awaitable task.
 			transportWeb.Deliver(emailMessage);	
 		
-			View("NewsletterSuccess");
+			return View("NewsletterSuccess");
 		}
     }
 }
