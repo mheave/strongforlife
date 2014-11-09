@@ -31,7 +31,7 @@
 	.coda-nav-left a {
 		height:140px;
 		width:30px;
-		background-image:url(../images/coda/arrows.png);
+		background-image:url(/Resources/Images/Template/images/coda/arrows.png);
 		background-repeat:no-repeat;
 		background-position:left 60px;
 	}
@@ -39,12 +39,12 @@
 	.coda-nav-right a {
 		height:140px;
 		width:30px;
-		background-image:url(../images/coda/arrows.png);
+		background-image:url(/Resources/Images/Template/images/coda/arrows.png);
 		background-repeat:no-repeat;
 		background-position:right 60px;
 	}		
 	/* Tab nav */
-	.coda-nav ul li a.current { background:url(../images/bullets.png) no-repeat; background-position:0 -22px; }
+	.coda-nav ul li a.current { background:url(/Resources/Images/Template/images/bullets.png) no-repeat; background-position:0 -22px; }
 	
 	/* Panel padding */	
 	.large.heading {
@@ -78,7 +78,7 @@
 	/* Tabbed nav */
 	.coda-nav ul { clear: both; display: block; margin: auto; overflow: hidden; padding:0; }
 	.coda-nav ul li { display: inline }
-	.coda-nav ul li a { background:url(../images/bullets.png) no-repeat;  display: block; float: left; 	width:22px; height:22px; text-decoration: none; text-indent:-9999px; }
+	.coda-nav ul li a { background:url(/Resources/Images/Template/images/bullets.png) no-repeat;  display: block; float: left; 	width:22px; height:22px; text-decoration: none; text-indent:-9999px; }
 	
 	/* Miscellaneous */
 	.coda-slider-wrapper { 
