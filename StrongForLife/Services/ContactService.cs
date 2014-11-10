@@ -45,6 +45,14 @@ namespace StrongForLife.Services {
 			SendEmail(adminMessage);	
 		}
 
+		public void SendAmazing12Admin(Amazing12UserViewModel applicant) {
+			var adminMessage = CreateSendGridMessage();
+			adminMessage.AddTo("wearestrongforlife@gmail.com");
+			adminMessage.Subject = "Amazing 12 application completed";
+			adminMessage.Html = string.Format(GetEmailContentForEmailType(ContactType.Amazing12Complete), applicant.FirstName, applicant.Surname,applicant.Email,applicant.MobileNumber,applicant.TakePartReason,applicant.Values,applicant.Motivation,applicant.DietSuccess,applicant.TrainingPreference);
+			SendEmail(adminMessage);
+		}
+
 
 		private static string GetEmailContentForEmailType(ContactType emailType){
 			string emailCopy;
@@ -67,6 +75,19 @@ namespace StrongForLife.Services {
 				case ContactType.Amazing12InitialAdmin:
 					emailCopy =  "<p>Interest in Amazing 12 registered. Email address: <strong>{0}</strong></p>";
 					break;
+				case ContactType.Amazing12Complete:
+					emailCopy =		"<p>Amazing 12 application completed with details:</p>";
+					emailCopy +=	"<p>First name: {0}</p>";
+					emailCopy +=	"<p>Surname: {1}</p>";
+					emailCopy +=	"<p>Email: {2}</p>";
+					emailCopy +=	"<p>Mobile number: {3}</p>";
+					emailCopy +=	"<p>Take part reason: {4}</p>";
+					emailCopy +=	"<p>Values: {5}</p>";
+					emailCopy +=	"<p>Motivation: {6}</p>";
+					emailCopy +=	"<p>Diet success: {7}</p>";
+					emailCopy +=	"<p>Training time pref: {8}</p>";
+					break;
+
 				default:
 					emailCopy = "";
 					break;

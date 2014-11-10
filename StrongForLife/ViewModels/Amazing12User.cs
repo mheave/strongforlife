@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace StrongForLife.Models {
-	public class Amazing12User {
+namespace StrongForLife.ViewModels {
+	public class Amazing12UserViewModel {
 		public string FirstName { get; set; }
 		public string Surname { get; set; }
 		public string Email { get; set; }
@@ -19,14 +19,14 @@ namespace StrongForLife.Models {
 
 	public enum DietSuccess
 	{
-		Yes,
-		No,
-		Sometimes
+		Yes = 1,
+		No = 2,
+		Sometimes = 3
 	}
 
 	public enum TrainingPreference {
-		Morning,
-		Daytime,
-		Evenings
+		Morning = 1,
+		Daytime = 2,
+		Evenings = 3
 	}
 }

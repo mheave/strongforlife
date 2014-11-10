@@ -1,8 +1,20 @@
-﻿@{
-    ViewBag.Title = "Confirm";
-}
+﻿@model StrongForLife.ViewModels.Amazing12UserViewModel
 
-<h2>Confirm</h2>
+<div class="box">
+	<div class="clearsmall"></div>
+	<h2>Get in touch</h2>
+	@using (Html.BeginForm("CompleteSubmission","Amazing12",FormMethod.Post,new {id = "contactus"}))
+	{
+		<p>First name: <br/>@Html.TextBoxFor(model=>model.FirstName)</p>
+		<p>Surname:<br /> @Html.TextBoxFor(model => model.Surname)</p>
+		<p>Email: <br />@Html.TextBoxFor(model => model.Email)</p>
+		<p>Mobile No.: <br />@Html.TextBoxFor(model => model.MobileNumber)</p>
+		<p>Why do you want to take part in the Amazing 12 Week Physique? <br/> @Html.TextAreaFor(model => model.TakePartReason)</p>
+		<p>What values define you as a person?<br /> @Html.TextAreaFor(model => model.Values)</p>
+		<p>What motivates you?<br /> @Html.TextAreaFor(model => model.Motivation)</p>
+		<p>Have you had success with proper diet and nutrition in the past? <br /> @Html.EnumDropDownListFor(m => m.DietSuccess)</p>
+		<p>If chosen for a place on the Amazing 12 Week Physique, would you prefer to train: <br />@Html.EnumDropDownListFor(m => m.TrainingPreference)</p>
+		<input class="button highlight action" type="submit" value="Submit" />
+ }
 
-
-<p>@ViewBag.Email</p>
+</div>
