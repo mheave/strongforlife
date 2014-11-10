@@ -33,24 +33,7 @@ namespace StrongForLife.Controllers
 
 		[HttpPost]
 		public ActionResult NewsletterSignup(string email) {
-
-			var htmlEmailContent = "Email: {0}"	;
-			var emailMessage = new SendGridMessage();
-			emailMessage.From = new MailAddress("coach@wearestrongforlife.co.uk");
-			emailMessage.AddTo("wearestrongforlife@gmail.com");
-			emailMessage.Subject = "Newsletter signup";
-			emailMessage.Text = string.Format(htmlEmailContent, email);
-			
-			// Create credentials, specifying your user name and password.
-			var credentials = new NetworkCredential("azure_30e3ac2fdfd17d5e9daa1e0f6365ac99@azure.com", "I2ivj2daL9U1v5y");
-
-			// Create an Web transport for sending email.
-			var transportWeb = new Web(credentials);
-
-			//// Send the email.
-			//// You can also use the **DeliverAsync** method, which returns an awaitable task.
-			transportWeb.Deliver(emailMessage);	
-		
+			_contactService.SendNewsletterSubscriptionNotification(email);
 			return View("NewsletterSuccess");
 		}
 

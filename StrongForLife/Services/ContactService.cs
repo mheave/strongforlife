@@ -22,6 +22,14 @@ namespace StrongForLife.Services {
 			SendEmail(message);						
 		}
 
+		public void SendNewsletterSubscriptionNotification(string email) {
+			var message = CreateSendGridMessage();
+			message.AddTo("wearestrongforlife@gmail.com");
+			message.Subject = "Newsletter signup";
+			message.Html = string.Format(GetEmailContentForEmailType(ContactType.NewsletterAdmin), email);
+			SendEmail(message);	
+		}
+
 
 		private string GetEmailContentForEmailType(ContactType emailType) {
 
@@ -29,6 +37,8 @@ namespace StrongForLife.Services {
 			{
 				case ContactType.EnquiryAdmin:
 					return "<p>Enquiry recieved via website.</p><p>Name: {0}<br/>Email: {1}<br/>Tel: {2}</p>";
+				case ContactType.NewsletterAdmin:
+					return "<p>User {0} has requested to recieve a newsletter</p>";
 				default:
 					return "";
 			}
