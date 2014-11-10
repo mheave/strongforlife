@@ -59,7 +59,7 @@ namespace StrongForLife.Services {
 				case ContactType.Amazing12Initial:
 					emailCopy =		"<p>Thank for your interest in applying for the Amazing 12 Week Physique Body Transformation Program. You are really taking the first steps to positive changes.</p>";
 					emailCopy +=	"<p>Almost there. Please follow the link below and this will take you to your application form. When you have answered the relevant sections, please submit your form.</p>";
-					emailCopy +=	"<p><a href='http://www.wearestrongforlife.com/Amazing12/Confirm?email={0}'>http://www.wearestrongforlife.com/Amazing12/Confirm?email={0}</a></p>";
+					emailCopy +=	"<p><a href='http://www.wearestrongforlife.co.uk/Amazing12/Confirm?email={0}'>http://www.wearestrongforlife.co.uk/Amazing12/Confirm?email={0}</a></p>";
 					emailCopy +=	"<p>We will then review your application and get back to you within 5 working days.</p>";
 					emailCopy +=	"<p>Thank you for your time.</p>";
 					emailCopy +=	"<p><em>\"a journey of a thousand miles begins with a single step\"</em></p>";
