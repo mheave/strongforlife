@@ -33,10 +33,16 @@ namespace StrongForLife.Services {
 
 		public void SendAmazing12IntroductionEmail(string email) {
 			var message = CreateSendGridMessage();
-			message.AddTo("mark.heaver@gmail.com");
+			message.AddTo(email);
 			message.Subject = "The Amazing 12 week physique";
 			message.Html = string.Format(GetEmailContentForEmailType(ContactType.Amazing12Initial), email);
 			SendEmail(message);	
+
+			var adminMessage = CreateSendGridMessage();
+			adminMessage.AddTo("wearestrongforlife@gmail.com");
+			adminMessage.Subject = "Amazing 12 interest";
+			adminMessage.Html = string.Format(GetEmailContentForEmailType(ContactType.Amazing12InitialAdmin), email);
+			SendEmail(adminMessage);	
 		}
 
 
@@ -57,6 +63,9 @@ namespace StrongForLife.Services {
 					emailCopy +=	"<p>We will then review your application and get back to you within 5 working days.</p>";
 					emailCopy +=	"<p>Thank you for your time.</p>";
 					emailCopy +=	"<p><em>\"a journey of a thousand miles begins with a single step\"</em></p>";
+					break;
+				case ContactType.Amazing12InitialAdmin:
+					emailCopy =  "<p>Interest in Amazing 12 registered. Email address: <strong>{0}</strong></p>";
 					break;
 				default:
 					emailCopy = "";
