@@ -20,5 +20,12 @@ namespace StrongForLife.Controllers
 			return View();
 		}
 
+		public ActionResult Confirm(string email) {
+			ViewBag.Email = email;
+
+			return View();
+			
+		}
+
     }
 }
