@@ -45,8 +45,10 @@
 		<!-- End Newsletter Left -->
 		<!-- Start Newsletter Right -->
 		<div id="newsletter_right">
-			<input type="text" name="email" style="height: 35px; width: 200px; margin-right: 5px; font-size: 1.1em;" /><input type="submit" value="begin my journey" class="button highlight action" />
-
+			@using (Html.BeginForm("Amazing12","Contact",FormMethod.Post,new {id = "contactus"}))
+			{
+				<input type="text" name="email" style="height: 35px; width: 200px; margin-right: 5px; font-size: 1.1em;" /><input type="submit" value="begin my journey" class="button highlight action" />
+			}
 
 		</div>
 		<!-- End Newsletter Right -->
