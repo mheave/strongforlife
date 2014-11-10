@@ -31,7 +31,6 @@ namespace StrongForLife.Controllers
 		public ActionResult CompleteSubmission(Amazing12UserViewModel amazing12User) {
 			_contactService.SendAmazing12Admin(amazing12User);
 
-
 			return View();
 		}
 
