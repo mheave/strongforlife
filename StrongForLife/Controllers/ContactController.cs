@@ -40,7 +40,6 @@ namespace StrongForLife.Controllers
 		[HttpPost]
 		public ActionResult Amazing12(string email) {
 			_contactService.SendAmazing12IntroductionEmail(email);
-
 			return View("Amazing12IntroductionSuccess");
 		}
     }

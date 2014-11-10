@@ -63,4 +63,3 @@ C:\FileStore\Personal\StrongForLife\StrongForLife\bin\System.Web.WebPages.Deploy
 C:\FileStore\Personal\StrongForLife\StrongForLife\bin\System.Web.WebPages.Razor.xml
 C:\FileStore\Personal\StrongForLife\StrongForLife\obj\Debug\StrongForLife.dll
 C:\FileStore\Personal\StrongForLife\StrongForLife\obj\Debug\StrongForLife.pdb
-C:\FileStore\Personal\StrongForLife\StrongForLife\obj\Debug\StrongForLife.csprojResolveAssemblyReference.cache

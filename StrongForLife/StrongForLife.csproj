@@ -578,6 +578,7 @@
     <Content Include="Views\Amazing12\Beta.cshtml" />
     <Content Include="Views\Home\Timetable.cshtml" />
     <Content Include="Views\Contact\NewsletterSuccess.cshtml" />
+    <Content Include="Views\Contact\Amazing12IntroductionSuccess.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
