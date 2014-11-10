@@ -4,6 +4,7 @@ using System.EnterpriseServices;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
+using System.Text;
 using System.Web;
 using SendGrid;
 using StrongForLife.ViewModels;
@@ -30,19 +31,40 @@ namespace StrongForLife.Services {
 			SendEmail(message);	
 		}
 
+		public void SendAmazing12IntroductionEmail(string email) {
+			var message = CreateSendGridMessage();
+			message.AddTo("mark.heaver@gmail.com");
+			message.Subject = "The Amazing 12 week physique";
+			message.Html = string.Format(GetEmailContentForEmailType(ContactType.Amazing12Initial), email);
+			SendEmail(message);	
+		}
 
-		private string GetEmailContentForEmailType(ContactType emailType) {
 
+		private static string GetEmailContentForEmailType(ContactType emailType){
+			string emailCopy;
 			switch (emailType)
 			{
 				case ContactType.EnquiryAdmin:
-					return "<p>Enquiry recieved via website.</p><p>Name: {0}<br/>Email: {1}<br/>Tel: {2}</p>";
+					emailCopy = "<p>Enquiry recieved via website.</p><p>Name: {0}<br/>Email: {1}<br/>Tel: {2}</p>";
+					break;
 				case ContactType.NewsletterAdmin:
-					return "<p>User {0} has requested to recieve a newsletter</p>";
+					emailCopy =  "<p>User {0} has requested to recieve a newsletter</p>";
+					break;
+				case ContactType.Amazing12Initial:
+					emailCopy =		"<p>Thank for your interest in applying for the Amazing 12 Week Physique Body Transformation Program. You are really taking the first steps to positive changes.</p>";
+					emailCopy +=	"<p>Almost there. Please follow the link below and this will take you to your application form. When you have answered the relevant sections, please submit your form.</p>";
+					emailCopy +=	"<p><a href='http://www.wearestrongforlife.com/Amazing12/Confirm/{0}'>http://www.wearestrongforlife.com/Amazing12/Confirm/{0}</a></p>";
+					emailCopy +=	"<p>We will then review your application and get back to you within 5 working days.</p>";
+					emailCopy +=	"<p>Thank you for your time.</p>";
+					emailCopy +=	"<p><em>\"a journey of a thousand miles begins with a single step\"</em></p>";
+					break;
 				default:
-					return "";
+					emailCopy = "";
+					break;
+
 			}
 
+			return emailCopy;
 		}
 
 		private SendGridMessage CreateSendGridMessage() {
