@@ -47,7 +47,7 @@ namespace StrongForLife.Services {
 
 		public void SendAmazing12Admin(Amazing12UserViewModel applicant) {
 			var adminMessage = CreateSendGridMessage();
-			adminMessage.AddTo("mark.heaver@gmail.com");
+			adminMessage.AddTo("wearestrongforlife@gmail.com");
 			adminMessage.Subject = "Amazing 12 application completed";
 			adminMessage.Html = string.Format(GetEmailContentForEmailType(ContactType.Amazing12Complete), applicant.FirstName, applicant.Surname,applicant.Email,applicant.MobileNumber,applicant.TakePartReason,applicant.Values,applicant.Motivation,applicant.DietSuccess,applicant.TrainingPreference);
 			SendEmail(adminMessage);
