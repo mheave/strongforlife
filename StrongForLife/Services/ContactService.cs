@@ -104,7 +104,7 @@ namespace StrongForLife.Services {
 		}
 
 		private void SendEmail(SendGridMessage message) {
-			var credentials = new NetworkCredential("azure_30e3ac2fdfd17d5e9daa1e0f6365ac99@azure.com", "I2ivj2daL9U1v5y");
+			var credentials = new NetworkCredential("azure_9e06d7ec53d0400b0c41d6d13412b789@azure.com", "6u8S9rp5pkwKxAU");
 			var transportWeb = new Web(credentials);
 			transportWeb.Deliver(message);	
 		}
