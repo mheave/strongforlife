@@ -1,7 +1,4 @@
-﻿<script src="/Resources/JS/lightbox.min.js"></script>
-<link href="/Resources/css/lightbox.css" rel="stylesheet" />
-
-<div class="box">
+﻿<div class="box">
 	<div class="clearsmall"></div>
 
 	<div class="headertext">The Amazing 12 gallery</div>
@@ -11,34 +8,22 @@
 	<div class="container_12">
 		<div class="grid_12_no_margin">
 			<ul id="list" class="image-grid threecol portfolio-content">
-				<li data-id="1" data-type="cardio_fitness">
-					<div class="hover_image">
-						<a href="/Resources/Images/Template/images/placeholder.jpg" rel="prettyPhoto" title="Amazing 12"><img src="/Resources/Images/A12_300x300/03beastman-6ec83210c7.jpg" alt="" width="263" height="260" /></a>
-					</div>
-					<div class="text_box">
-						<h4>Beast man</h4>
-						<p>Check out this guy!</p>
-					</div>
+				<li data-id="1">
+					<a href="/Resources/Images/A12_800x800/beastman.jpg" rel="prettyPhoto[a12]" title="Beast man transformation">
+						<img src="/Resources/Images/A12_300x300/03beastman-6ec83210c7.jpg" alt=""/>
+					</a>
 				</li>
 
-				<li data-id="2" data-type="cardio_fitness">
-					<div class="hover_image">
-						<a href="/Resources/Images/Template/images/placeholder.jpg" rel="prettyPhoto" title="Amazing 12"><img src="/Resources/Images/A12_300x300/03beastman-6ec83210c7.jpg" alt="" width="263" height="260" /></a>
-					</div>
-					<div class="text_box">
-						<h4>Beast man</h4>
-						<p>Check out this guy!</p>
-					</div>
+				<li data-id="1">
+					<a href="/Resources/Images/A12_800x800/beastman.jpg" rel="prettyPhoto[a12]" title="Beast man transformation">
+						<img src="/Resources/Images/A12_300x300/03beastman-6ec83210c7.jpg" alt="" />
+					</a>
 				</li>
 
-				<li data-id="3" data-type="cardio_fitness">
-					<div class="hover_image">
-						<a href="/Resources/Images/Template/images/placeholder.jpg" rel="prettyPhoto" title="Amazing 12"><img src="/Resources/Images/A12_300x300/03beastman-6ec83210c7.jpg" alt="" width="263" height="260" /></a>
-					</div>
-					<div class="text_box">
-						<h4>Beast man</h4>
-						<p>Check out this guy!</p>
-					</div>
+				<li data-id="1">
+					<a href="/Resources/Images/A12_800x800/beastman.jpg" rel="prettyPhoto[a12]" title="Beast man transformation">
+						<img src="/Resources/Images/A12_300x300/03beastman-6ec83210c7.jpg" alt="" />
+					</a>
 				</li>
 
 			</ul>
@@ -46,3 +31,10 @@
 	</div>
 	<div class="clearnospacing"></div>
 </div> 
+
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+		$("a[rel^='prettyPhoto']").prettyPhoto();
+	});
+</script>
+
