@@ -146,14 +146,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Resources\JS\jquery-1.11.0.min.map" />
-    <Content Include="Resources\JS\lightbox.min.map" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Resources\CSS\coda-slider-2.0.css" />
     <Content Include="Resources\CSS\contact.css" />
     <Content Include="Resources\CSS\grid.css" />
     <Content Include="Resources\CSS\layout.css" />
-    <Content Include="Resources\CSS\lightbox.css" />
     <Content Include="Resources\CSS\menu.css" />
     <Content Include="Resources\CSS\nivo-slider-blog.css" />
     <Content Include="Resources\CSS\nivo-slider-project.css" />
@@ -303,10 +300,6 @@
     <Content Include="Resources\Images\layout\facebook-icon.png" />
     <Content Include="Resources\Images\layout\twitter-icon.png" />
     <Content Include="Resources\Images\layout\youtube-icon.png" />
-    <Content Include="Resources\Images\lightbox\close.png" />
-    <Content Include="Resources\Images\lightbox\loading.gif" />
-    <Content Include="Resources\Images\lightbox\next.png" />
-    <Content Include="Resources\Images\lightbox\prev.png" />
     <Content Include="Resources\Images\logo.png" />
     <Content Include="Resources\Images\logos\a12.jpg" />
     <Content Include="Resources\Images\logos\blackBGSFL.png" />
@@ -657,7 +650,6 @@
     <Content Include="Resources\JS\expand.js" />
     <Content Include="Resources\JS\hoverIntent.js" />
     <Content Include="Resources\JS\jflickrfeed.min.js" />
-    <Content Include="Resources\JS\jquery-1.11.0.min.js" />
     <Content Include="Resources\JS\jquery-1.6.2.min.js" />
     <Content Include="Resources\JS\jquery-ui-1.8.11.custom.min.js" />
     <Content Include="Resources\JS\jquery.coda-slider-2.0.js" />
@@ -675,7 +667,6 @@
     <Content Include="Resources\JS\jquery.tabSlideOut.v1.3.js" />
     <Content Include="Resources\JS\jquery.ui.tabs.js" />
     <Content Include="Resources\JS\jquery.ui.widget.js" />
-    <Content Include="Resources\JS\lightbox.js" />
     <Content Include="Resources\JS\lightbox.min.js" />
     <Content Include="Resources\JS\menu.js" />
     <Content Include="Resources\JS\scroll.js" />
