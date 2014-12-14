@@ -1956,6 +1956,19 @@ ul#list {
    	background: url("/Resources/Images/Template/images/play_icon.png") 50% 50% no-repeat;
 }
 
+
+.a12GalleryLink {
+	text-decoration: none;
+	color: #08ab0f;
+	text-align: center;
+	font-size: 2.5em;
+	margin-left:30%;
+}
+
+.a12GalleryLink:hover {
+	text-decoration: underline;
+}
+
 /*-----------Style 1-----------*/
 
 .clients-first img {
